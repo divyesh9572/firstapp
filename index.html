@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App By Divyesh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://kit.fontawesome.com/5a3f82a0fb.js" crossorigin="anonymous"></script>
+     <script src="utility.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Enter Your City Here.."
+            class="input-box animate__heartBeat"
+          />
+          <button
+            class="fa-sharp fa-solid fa-magnifying-glass fa-beat"
+            id="search-btn"
+          ></button>
+        </div>
+      </div>
+      <div class="location-not-found">
+        <h1>Sorry Location Not Found</h1>
+        <img src="./404 (1).png" alt="" srcset="" />
+      </div>
+      <div class="weather-body">
+        <img src="cloud (1).png" alt="Weather" class="weather-img" />
+        <div class="weather-box">
+          <p class="tempeture">0°C</p>
+          <p class="description"></p>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet fa-flip"></i>
+            <div class="text">
+              <span id="humidity">0%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind fa-flip"></i>
+            <div class="text">
+              <span id="wind">0Km/h</span>
+              <p>wind-speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
